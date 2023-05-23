@@ -9,8 +9,8 @@ function draw() {
 //pushing the grid out of the top left corner
 translate(150,160)
 
-for (let x = 0; x < 10; x += 1){
-   for (let y = 0; y < 10; y+= 1){
+for (let x = 0; x < 8; x += 1){
+   for (let y = 0; y < 8; y+= 1){
     push();
       
       //move the drawing plan to
