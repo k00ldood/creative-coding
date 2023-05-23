@@ -14,7 +14,7 @@ for (let x = 0; x < 8; x += 1){
     push();
       
       //move the drawing plan to
-      //add a new circle
+      //add a new rectangle
       translate(x * 100,y * 100);
 
       //line thickness
@@ -26,8 +26,8 @@ for (let x = 0; x < 8; x += 1){
       //fill color
       fill(0,random(0,255),160);
 
-      //draw the circle
-      ellipse(0,0,random(75,130));
+      //draw the rectangle
+      rect(0,0,random(75,130));
 
       pop();  
     }
