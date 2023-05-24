@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(1100, 1200);
+  createCanvas(1100, 1100);
   noLoop();
 
 //The quilt that I chose is called "Square in a Square". Down below is the link:         https://www.internationalquiltmuseum.org/quilt/19970070181
