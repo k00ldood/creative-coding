@@ -31,6 +31,7 @@ function draw() {
   
   background(220);
   fill(240,248,255);
+  translate(25,20)
   rect(50,30,950,1000);
   
 
