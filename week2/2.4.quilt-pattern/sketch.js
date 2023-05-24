@@ -7,25 +7,37 @@ function setup() {
 }
 
 function pattern(){
-     //drawing horizontal lines
+      //drawing horizontal lines
       line(25,35,60,35);
       line(25,45,60,45);
       line(25,55,60,55);
       line(25,65,60,65);
 }
 function pattern2(){
-  //drawing slanted vertical lines
-    strokeWeight(2);
+      //drawing slanted vertical lines
+      strokeWeight(2);
       line(25,35,35,70);
       line(35,35,45,70);
       line(45,35,55,70);
       line(55,35,65,70);
 }
 function pattern3(){
-  //drawing the smaller white squares in the rectangles
+      //drawing the smaller white squares in the rectangles
       rect (30,50,1,1);
       rect (55,60,1,1);
       rect (58,70,1,1);
+}
+function pattern4(){
+      //drawing more dots
+      point(27,45);
+      point(27,55);
+      point(27,65);
+      point(42,45);
+      point(42,55);
+      point(42,65);
+      point(57,45);
+      point(57,55);
+      point(57,65);
 }
 function draw() {
   
@@ -68,7 +80,7 @@ function draw() {
       //draw the rectangle
       rect(20,30,45,45);
 
-      var p = random([pattern,pattern2,pattern3]);
+      var p = random([pattern,pattern2,pattern3,pattern4]);
       p()
   
 
