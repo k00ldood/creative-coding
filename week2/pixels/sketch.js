@@ -6,7 +6,7 @@ function preload(){
 }
 function setup() {
   createCanvas(800, 800);
-  img.LoadPixels();
+  img.loadPixels();
 }
 
 function draw() {
