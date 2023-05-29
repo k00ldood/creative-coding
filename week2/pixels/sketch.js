@@ -1,6 +1,7 @@
 let img;
 let sampleX = 10;
 let sampleY = 10;
+
 function preload(){
    img = loadImage('https://k00ldood.github.io/creative-coding/week2/pixels/22203-diplopia.jpg');
 }
@@ -12,7 +13,6 @@ function setup() {
 function draw() {
   background(220);
   noStroke();
-  translate(100,100);
 
   //image(img, 0, 0);
 
