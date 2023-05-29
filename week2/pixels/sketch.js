@@ -18,7 +18,7 @@ function draw() {
 
   for(let x = 0; x <= img.width; x +=
     sampleX){
-    for(let y = 0; y <= img.height;y +=
+    for(let y = 0; y <= img.height; y +=
       sampleY){
       var index = (x + y * img.width) * 4;
       var r = img.pixels[index + 0];
