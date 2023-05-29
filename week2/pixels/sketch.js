@@ -11,8 +11,8 @@ function setup() {
 
 function draw() {
   background(220);
-
-  translate(0,50);
+  noStroke();
+  translate(100,100);
 
   //image(img, 0, 0);
 
