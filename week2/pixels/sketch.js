@@ -9,5 +9,6 @@ function setup() {
 function draw() {
   background(220);
 
+  translate(0,50);
   image(img, 0, 0); 
 }
