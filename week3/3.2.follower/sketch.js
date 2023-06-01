@@ -1,4 +1,4 @@
-let debug = true;
+let debug = false;
 let x = 0;
 let y = 0;
 let d = 0;
@@ -6,10 +6,15 @@ let score = 0;
 let speedfactor = 3;
 let speedx = speedfactor;
 let speedy = speedfactor;
+let img;
+let canvas;
 
+function preload(){
+  img = loadImage("https://raw.githubusercontent.com/k00ldood/creative-coding/main/week3/3.2.follower/pngegg.png");
+}
 
 function setup(){
-  createCanvas(800,800);
+  canvas = createCanvas(800,800);
 
   x = random(width);
   y = random(height);
@@ -28,7 +33,8 @@ x += speedx;
 y += speedy;
 
 //draw a circle for the follower
-circle(x,y,50);
+image(img,x,y,64,64);
+
 
 if (mouseX > x){
   //move to the right
@@ -48,11 +54,12 @@ if (mouseY > y){
 
 //check for collision
 if (d < 25){
-  score -= 1;
+  score += 1;
   x = random(width);
   y = random(height);
 }
-
+textSize(50);
+text("score: " + score, 10, 50);
 if (debug){
    textSize(30);
    text("mouseX: " + mouseX, 50,50);
