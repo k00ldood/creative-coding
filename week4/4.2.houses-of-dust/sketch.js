@@ -1,3 +1,7 @@
+//I've been really intrigued with the generated literacy we've been examing at lately. Unfortunately
+//haven't had much time to look too deep into it as I'm currently abroad. But the code I created is very
+//similar to Knowles and I only really changed some of the list materials used for the code to generate.
+
 let poem;
 let grammar = tracery.createGrammar({
   "origin": "A HOUSE OF #material#\n#place#\nUSING #light_source#\nINHABITED BY #inhabitants#",
